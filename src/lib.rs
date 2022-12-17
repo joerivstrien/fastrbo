@@ -18,7 +18,7 @@ fn rank_biased_overlap(
 
 /// A Python module implemented in Rust.
 #[pymodule]
-fn rust_rbo(_py: Python, m: &PyModule) -> PyResult<()> {
+fn fastrbo(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(rank_biased_overlap, m)?)?;
     Ok(())
 }
