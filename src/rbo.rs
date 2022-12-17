@@ -81,8 +81,8 @@ pub fn rbo(conf: Config, left: RankedList, right: RankedList) -> f64 {
     }
 
     // Initialize A(agreement), AO (average overlap)
-    // I think we only need current and previous?
-    // so tuple or array
+    // the only information we need is current and previous, not all ranks
+    // so we can store on the stack
     let mut a: [f64;2] = [0.0,0.0];
     let mut ao: [f64;2] = [0.0,0.0];
         
