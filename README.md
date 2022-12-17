@@ -23,7 +23,13 @@ This is a fast rust-based implementation of the <ins>non-extrapolated</ins> rank
 
 ## Usage
     from fast_rbo import rank_biased_overlap
-    result = rank_biased_overlap(p,left,right)
+    result = rank_biased_overlap(search_depth,p,left,right)
+
+- <ins>search_depth</ins>: the number of ranks to use for computation of rbo. Set to length >= longest list to include all ranks
+- <ins>p</ins>: value between 0 and 1. the rbo p-parameter, which determines the "top-heaviness" of the rank biased overlap. Lower values result in more emphasis
+on the top of the ranked lists
+- <ins>left/right</ins>: the ranked lists to compute the rank biased overlap for
+
 
 ## Issues
 If you have questions or encounter any problems or bugs, please report this in the [issue channel](https://github.com/joerivstrien/fastrbo/issues).
