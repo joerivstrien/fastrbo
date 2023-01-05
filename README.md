@@ -19,7 +19,6 @@ This is a fast rust-based implementation of the <ins>non-extrapolated</ins> rank
     git clone https://github.com/joerivstrien/fastrbo
     cd fastrbo
     maturin develop --release
-    pip install .
 
 ## Usage
     from fast_rbo import rank_biased_overlap
